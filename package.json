@@ -9,8 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/font": "13.4.12",
+    "@reduxjs/toolkit": "^1.9.5",
     "next": "13.4.12",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-redux": "^8.1.1"
+  },
+  "devDependencies": {
+    "next-router-mock": "^0.9.7"
   }
 }
