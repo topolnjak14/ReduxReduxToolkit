@@ -2,7 +2,7 @@
 import Image from "next/image";
 
 const cargador = ({src, width}) => {
-    return `src="${src}"?w="${width}`
+    return `${src}?w=${width}`
 }
 
 

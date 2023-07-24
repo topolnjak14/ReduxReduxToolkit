@@ -1,10 +1,11 @@
 import Link from "next/link";
 import Imagen from "./Imagen";
+import estilos from "./Ficha.module.css"
 
 const Ficha = ({valor}) => {
     return (
         <>
-          <div className="producto">
+          <div className={estilos.producto}>
             <div className="nombre">
                 {valor.title}
             </div>
