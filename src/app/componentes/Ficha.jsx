@@ -2,6 +2,10 @@ import Link from "next/link";
 import Imagen from "./Imagen";
 import estilos from "./Ficha.module.css"
 
+/* Como no sabemos que producto se mostrará
+utilizamos la variable ${valor.id} */
+
+
 const Ficha = ({valor}) => {
     return (
         <>
@@ -16,7 +20,8 @@ const Ficha = ({valor}) => {
                 <Imagen valor= {valor}/>
             </div>
             <div className="ver">
-                <Link href=""><button>Ver más</button></Link>
+                {/* Este link debe redirigirse a la carpeta [id] */}
+                <Link href={`/productos/${valor.id}`}><button>Ver más</button></Link>
             </div>
           </div>  
         </>

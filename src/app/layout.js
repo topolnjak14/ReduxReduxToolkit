@@ -1,5 +1,6 @@
 import Providers from "../../store/provider";
 import {Montserrat} from "@next/font/google"
+import Carrito from "./carrito/Carrito";
 
 const fuente= Montserrat({
   weight: "400",
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <Providers>
         <body  className={fuente.className}>
+          <Carrito/>
           {children}
         </body>
       </Providers>
