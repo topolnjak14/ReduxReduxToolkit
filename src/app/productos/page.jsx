@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Ficha from "../componentes/Ficha";
 import estilos from "./productos.module.css"
 
@@ -10,11 +11,13 @@ export default async function page() {
     const datos=await cargarDatos();
     return (
         <>
+        <Link href="/"><button>Volver</button></Link>
         <div className={estilos.productos}>
          {datos.map((valor, indice)=>
          <Ficha valor={valor}/>
          )}   
         </div>
+
         </>
     );
 }

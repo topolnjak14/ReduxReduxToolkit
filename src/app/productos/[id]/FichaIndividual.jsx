@@ -3,6 +3,7 @@
 import Imagen from "@/app/componentes/Imagen";
 import { useDispatch } from "react-redux"; //Para poder grabar datos en nuestro store
 import { comprar } from "../../../../store/miSlice";
+import Link from "next/link";
 
 
 /* Datos es el fetch que se realizó para cargar
@@ -19,6 +20,10 @@ valor={datos}*/
 
 /* adquirir debe ingresar al Store, usar el reducer "COMPRAR"
 y luego agregar el producto a miCarrito:[] */
+
+/* Para eliminar un producto del carrito haremos referencia a su ID,
+lo que queremos es borrarlo, por lo tanto tambien haremos
+referencia a producto */
 
 const FichaIndividual = ({datos}) => {
     const dispatch =useDispatch()
@@ -43,6 +48,7 @@ const FichaIndividual = ({datos}) => {
          </div>   
          <div>
             <button onClick={() => adquirir(datos)}>Comprar</button>
+            <Link href="/productos"><button>Volver</button></Link>
          </div>   
         </>
     );

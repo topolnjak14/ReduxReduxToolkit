@@ -15,13 +15,14 @@ export const origenSlice = createSlice({
     },
     reducers: {
        guardarCategoria:(state, action) =>{
-        //Accion 1: Recibimos un estado y aqui agregamos la accion a ejecutar
+        state.categoria= action.payload;
        },
        comprar:(state, action) =>{
         state.miCarrito=[...state.miCarrito, action.payload];
        },
        devolver:(state, action) =>{
-        //Accion 3: Recibimos un estado y aqui agregamos la accion a ejecutar
+        state.miCarrito= state.miCarrito.filter(objeto=>
+            objeto.producto!==action.payload)
        }
  }
 })
