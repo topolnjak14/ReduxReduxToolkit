@@ -1,6 +1,9 @@
 import Providers from "../../store/provider";
 import {Montserrat} from "next/font/google"
 import Carrito from "./carrito/Carrito";
+import Header from "./header/Header";
+import global from "./global.module.css";
+import Baner from "./baner/Baner";
 
 const fuente= Montserrat({
   weight: "400",
@@ -17,7 +20,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <Providers>
-        <body  className={fuente.className}>
+        <body  className={`${fuente.className} ${global.body}`}>
+          <Header/>
+          <Baner/>
           <Carrito/>
           {children}
         </body>
