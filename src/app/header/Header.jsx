@@ -1,13 +1,12 @@
 import Link from "next/link";
-import imagen from "../../../public/images/carrito.png";
-import Image from "next/image";
 import estilos from "./nav.module.css";
+import Aside from "../aside/Aside";
 
 const Header = () => {
     return (
         <>
           <div className={estilos.nav}>
-                <Link href="/about" className={estilos.logo}>
+                <Link href="/" className={estilos.logo}>
                     TechVibe
                     <span>.</span>
                 </Link>
@@ -16,13 +15,7 @@ const Header = () => {
                 <Link href="/about">Hot sales</Link>
                 <Link href="/about">Pricing</Link>
             </div>
-            <div className={estilos.carrito}>
-                <Image
-                    src={imagen}
-                    width={25}
-                    height={25}
-                />
-            </div>
+                <Aside/>
           </div> 
         </>
     );

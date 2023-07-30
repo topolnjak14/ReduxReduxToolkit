@@ -1,22 +1,19 @@
 .container{
     max-width: 1140px;
-    height: 70vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: auto;
     margin-left: auto;
-    border: 1px solid blue;
-}
+ }
 
 .leftSide{
     width: 50%;
     height: 100%;
-    border-right: 1px solid blue;
     display: flex;
     flex-direction: column;
-/*     margin: 5px 15px;
- */}
+}
 
 .leftSide h1{
     font-size: 3.5em;
@@ -41,14 +38,14 @@
     padding: 15px 40px;
     border-radius: 7px;
     color:#fff;
+    transition: background-color 0.2s;
+
 }
 
 .firstSide{
     width: 60%;
     height: 10em;
     margin-right: 7em;
-    border: 1px solid blue;
-
 }
 
 .secondSide{
@@ -56,11 +53,94 @@
     height: 10em;
     margin-left: 7em;
     margin-top: 2em;
-    border: 1px solid blue;
-
 }
 
 .container img{
     width: 100%;
     height: auto;
 }
+
+.container button:hover{
+    background: #74be24;
+    padding: 15px 50px;
+    animation: 3s linear infinite;
+
+
+}
+
+
+/* @Media */
+
+@media screen and (min-width: 1201px){
+  
+}
+@media screen and (max-width: 1200px){
+    
+}
+@media screen and (max-width: 1024px){
+    .leftSide{
+        padding: 0 10px;
+        margin-top: 40px;
+    }
+    .leftSide h1{
+        font-size: 3em;
+    }
+    .leftSide h2{
+        font-size: 1em;
+    }
+    .firstSide{
+        margin-right: 2em;
+    }
+    .secondSide{
+        margin-right: 2.5em;
+
+    }
+
+  }
+  @media screen and (max-width: 768px){
+    .leftSide{
+        padding: 0 10px;
+        margin-top: 40px;
+    }
+    .leftSide h1{
+        font-size: 2em;
+    }
+    .leftSide h2{
+        font-size: 1em;
+    }
+    .firstSide{
+        margin-right: 2em;
+    }
+    .secondSide{
+        margin-right: 2.5em;
+
+    }
+
+  }
+@media screen and (max-width: 480px) {
+    .container{
+        height: auto;
+    }
+    .leftSide{
+        padding: 0 10px;
+        margin-top: 4em;
+    }
+    .leftSide h1{
+        font-size: 1.5em;
+    }
+    .leftSide h2{
+        font-size: 1em;
+    }
+    .firstSide{
+        margin-right: 2em;
+    }
+    .secondSide{
+        margin-right: 2.5em;
+
+    }
+
+  }
+
+
+
+ 
