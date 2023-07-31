@@ -1,7 +1,15 @@
 .miCarrito{
+    position: fixed;
+    width: 40%;
+    height: 100vh;
+    background: #f5f2f2;
     display: flex;
-    align-items: center;
-    border: 1px dotted black;
-    padding: 6px 10px;
-    border-radius: 6px;
+    flex-direction: column;
+    align-items: start;
+    right: 0;
+    top: 81px;
+}
+
+.unidad{
+    margin-top: 40px;
 }

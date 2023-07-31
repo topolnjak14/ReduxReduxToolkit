@@ -1,5 +1,26 @@
 .producto{
-    border: 1px solid gray;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 16rem;
+    height: 55vh;
+    margin-top: 4em;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     border-radius: 8px;
-    padding: 15px 20px 15px;
+    padding: 5px;
+}
+
+.boton a{
+    display: flex;
+    margin-top: 4em;
+    width: 6em;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    background-color: #a9d47b;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 7px;
+    font-weight: bold;
+
 }

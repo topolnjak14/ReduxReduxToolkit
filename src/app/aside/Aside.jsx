@@ -5,7 +5,7 @@ import estilos from "./carrito.module.css"
 import React, {useState} from "react";
 import Carrito from "../carrito/Carrito";
 
-const Aside = () => {
+const Aside = ({valor}) => {
     const [mostrarAside, setMostrarAside] =useState(false);
 
     const handleMostrarAside=()=>{
@@ -22,7 +22,7 @@ const Aside = () => {
                 />
             </div>
             {mostrarAside &&
-            (<Carrito/>)
+            (<Carrito valor={valor} />)
             }   
         </>
     );

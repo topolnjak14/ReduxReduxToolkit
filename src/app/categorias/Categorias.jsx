@@ -10,7 +10,7 @@ categoria */
 
 import estilos from "./categorias.module.css";
 
-const Page =async () => {
+const Categorias =async () => {
     const categorias= await fetch("https://fakestoreapi.com/products/categories")
     .then(response => response.json());
 
@@ -27,9 +27,10 @@ const Page =async () => {
 
     return (
         <>
+        <div className={estilos.container}>
            <div className={estilos.columnas}>
                 {categorias.map((valor, indice)=>
-                <div className={`${estilos.columnas} ${estilos.categoria}`} key={indice}>
+                <div className={`${estilos.columna} ${estilos.categoria}`} key={indice}>
                    {valor} 
                 </div>
                 )}
@@ -41,8 +42,9 @@ const Page =async () => {
                 </div>
                 )}
            </div>
+        </div>
         </>
     );
 }
 
-export default Page;
+export default Categorias;

@@ -19,9 +19,9 @@ const Ficha = ({valor}) => {
             <div className="imagen">
                 <Imagen valor= {valor}/>
             </div>
-            <div className="ver">
+            <div className={estilos.boton}>
                 {/* Este link debe redirigirse a la carpeta [id] */}
-                <Link href={`/productos/${valor.id}`}><button>Ver más</button></Link>
+                <Link href={`/productos/${valor.id}`}>SEE MORE</Link>
             </div>
           </div>  
         </>

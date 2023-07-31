@@ -1,22 +1,27 @@
 .columnas{
+    max-width: 1024px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     text-align: center;
-
+    margin-left: auto;
+    margin-right: auto;
+    
 }
-
 .columna{
     text-transform: capitalize;
-    font-size: 1.6em;
-    width: 23%;
+    font-size: 1.4em;
+    width: 16em;
     padding: 22px 12px;
     box-sizing: border-box;
-    border: 1px solid gray;
     cursor: pointer;
 }
 
 .categoria{
+    width: 100%;
     color:white;
     background: #323232;
     
 }
+
+
+

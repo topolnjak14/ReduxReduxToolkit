@@ -36,10 +36,10 @@ const Carrito = () => {
     
     return (
         <>
-        <div>{total} </div>
+         <div>{total} </div>
         <div className={estilos.miCarrito}>
            {carrito.map((valor, indice)=>
-           <div key={indice}>
+           <div key={indice} className={estilos.unidad}>
                 <img onClick={() => eliminar(valor.producto)}
                 src={valor.imagen}
                 alt=""

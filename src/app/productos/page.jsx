@@ -12,14 +12,17 @@ export default async function page() {
     return (
         <>
         <Link href="/"><button>Volver</button></Link>
-        <div className={estilos.productos}>
-         {datos.map((valor, indice)=>
-         <Ficha valor={valor}/>
-         )}   
+        <div className={estilos.contenedorProductos}>
+            <div className={estilos.productos}>
+            {datos.map((valor, indice)=>
+            <Ficha valor={valor}/>
+            )}   
+            </div>
         </div>
 
         </>
     );
 }
+
 
 
