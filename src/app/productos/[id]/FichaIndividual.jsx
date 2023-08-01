@@ -4,6 +4,7 @@ import Imagen from "@/app/componentes/Imagen";
 import { useDispatch } from "react-redux"; //Para poder grabar datos en nuestro store
 import { comprar } from "../../../../store/miSlice";
 import Link from "next/link";
+import estilos from "../[id]/individual.module.css";
 
 
 /* Datos es el fetch que se realizó para cargar
@@ -38,20 +39,23 @@ const FichaIndividual = ({datos}) => {
     }
     return (
         <>
-         <div>{datos.title} </div>   
-         <div>{datos.price}$</div>   
-         <div>{datos.description}</div>   
-         <div>{datos.category}</div>   
-         <div>{datos.rating.rate}({datos.rating.count}) </div>   
-         <div>
+        <div className={estilos.container}>
+         <div className={estilos.title}>{datos.title} </div>   
+         <div className={estilos.price}>{datos.price}$</div>   
+         <div className={estilos.description}>{datos.description}</div>   
+         <div className={estilos.category}>{datos.category}</div>   
+         <div>Rate {datos.rating.rate}({datos.rating.count}) </div>   
+         <div className={estilos.img} >
             <Imagen valor={datos} />
          </div>   
-         <div>
-            <button onClick={() => adquirir(datos)}>Comprar</button>
-            <Link href="/productos"><button>Volver</button></Link>
+         <div className={estilos.botonContainer}>
+            <button onClick={() => adquirir(datos)} className={estilos.buy}>BUY</button>
+            <Link href="/productos"><button className={estilos.back}>BACK</button></Link>
          </div>   
+        </div>
         </>
     );
 }
 
 export default FichaIndividual;
+

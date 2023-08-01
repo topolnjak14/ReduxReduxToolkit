@@ -10,6 +10,12 @@
     padding: 5px;
 }
 
+.producto:hover {
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+
+}
+
+
 .boton a{
     display: flex;
     margin-top: 4em;
@@ -19,8 +25,13 @@
     text-decoration: none;
     background-color: #a9d47b;
     color: white;
-    padding: 15px 40px;
+    padding: 10px 15px;
     border-radius: 7px;
     font-weight: bold;
+    transition: background-color 0.2s;
+}
 
+.boton a:hover{
+    background: #74be24;
+    animation: 3s linear infinite;
 }

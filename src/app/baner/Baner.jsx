@@ -1,6 +1,6 @@
 import Link from "next/link";
 import estilos from "./baner.module.css";
-import imagen from "../../../public/images/devices.webp";
+import imagen from "../../../public/images/lovepik.png";
 import Image from "next/image";
 
 const Baner = () => {
@@ -16,13 +16,6 @@ const Baner = () => {
             </div>
             <div className={estilos.rightSide}>
                 <div className={estilos.firstSide}>
-                <Image
-                    src={imagen}
-                    width={700}
-                    height={700}
-                />
-                </div>
-                <div className={estilos.secondSide}>
                 <Image
                     src={imagen}
                     width={700}

@@ -11,7 +11,6 @@ export default async function page() {
     const datos=await cargarDatos();
     return (
         <>
-        <Link href="/"><button>Volver</button></Link>
         <div className={estilos.contenedorProductos}>
             <div className={estilos.productos}>
             {datos.map((valor, indice)=>

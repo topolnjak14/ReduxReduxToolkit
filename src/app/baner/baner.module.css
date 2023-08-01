@@ -44,20 +44,16 @@
 }
 
 .firstSide{
-    width: 60%;
-    height: 10em;
-    margin-right: 7em;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.secondSide{
-    width: 60%;
-    height: 10em;
-    margin-left: 7em;
-    margin-top: 2em;
-}
+
 
 .container img{
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -65,9 +61,9 @@
     background: #74be24;
     padding: 15px 50px;
     animation: 3s linear infinite;
-
-
 }
+
+
 
 
 /* @Media */
@@ -133,10 +129,13 @@
         font-size: 1em;
     }
     .firstSide{
-        margin-right: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
     .secondSide{
-        margin-right: 2.5em;
+        display: none;
 
     }
 
