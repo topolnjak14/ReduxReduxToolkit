@@ -31,6 +31,8 @@ const BotonVer = ({valor}) => {
         <div onClick={() => visualizar(valor.categoria)} >
          <Imagen
          valor={valor}
+         width={30}
+         height={30}
          />   
         </div>
         </>

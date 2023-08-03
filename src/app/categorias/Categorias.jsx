@@ -28,16 +28,16 @@ const Categorias =async () => {
     return (
         <>
         <div className={estilos.container}>
-           <div className={estilos.columnas}>
+            <div className={estilos.columnas}>
                 {categorias.map((valor, indice)=>
-                <div className={`${estilos.columna} ${estilos.categoria}`} key={indice}>
+                <div className={`${estilos.columnaaa} ${estilos.categoria}`} key={indice}>
                    {valor} 
                 </div>
                 )}
            </div>
-           <div className={estilos.columnas} >
+            <div className={estilos.columnas} >
                 {productos.map((valor, indice)=>
-                <div className={estilos.columna}>
+                <div className={estilos.columnaa}>
                     <BotonVer valor={valor} />
                 </div>
                 )}

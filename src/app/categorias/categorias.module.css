@@ -1,4 +1,11 @@
-.columnas{
+.container{
+    width: 400px;
+    height: auto;
+}
+
+
+
+ .columnas{
     max-width: 1024px;
     display: flex;
     justify-content: space-around;
@@ -10,8 +17,8 @@
 .columna{
     text-transform: capitalize;
     font-size: 1.4em;
-    width: 16em;
-    padding: 22px 12px;
+     width: 16em;
+     padding: 22px 12px;
     box-sizing: border-box;
     cursor: pointer;
 }
@@ -22,6 +29,27 @@
     background: #323232;
     
 }
+/*
+@media screen and (max-width:768px){
+    .columnas{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: auto;
+    }
+    
+}
+ @media screen and (max-width:480px){
+    .columnas{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: auto;
+    }
 
-
+}  */
 
